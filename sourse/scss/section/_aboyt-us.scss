@@ -1,1 +1,33 @@
 /**======================-ABOUT-US-=================*/
+.about-us {
+  background-color: $bg-light;
+  padding: 115px 0px;
+  @media (max-width: 767px) {
+    padding: 65px 0px;
+  }
+  @media (max-width: 424px) {
+    padding: 35px 0px;
+  }
+  &__block {
+  }
+}
+
+.block {
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+    margin: 0px 0px 34px 0px;
+  }
+
+  &__title {
+    @extend %title;
+    color: $title;
+    margin: 0px 0px 25px 0px;
+  }
+
+  &__text {
+    @extend %text;
+    color: $text;
+  }
+}

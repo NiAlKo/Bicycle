@@ -5,14 +5,16 @@
 /**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
-$font-family: "Lato";
+
 //**======================-ПЕРЕМЕННЫЕ-=================*/
 @import "./base/colors";
 @import "./base/typography";
+$font-family: "Lato";
 $min-width: 320px;
 //**======================-ОБНУЛЕНИЕ, ОБЩИЕ_ПАРАМЕТРЫ-=================*/
 @import "./base/reset";
 body {
+  font-size: 18px;
 }
 
 //**======================-УПАКОВКА-=================*/
@@ -26,7 +28,7 @@ body {
 .container {
   max-width: 1130px;
   padding: 0px 15px;
-  // margin: 0 auto;
+  margin: 0 auto;
 }
 // responsive images
 .ibg {
@@ -41,12 +43,23 @@ body {
 //**======================-ГЛАВНЫЕ_БЛОКИ-=================*/
 .main {
   position: absolute;
+  min-width: $min-width;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
+  .hidden-h1 {
+    position: absolute;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 .content {
 }

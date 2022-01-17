@@ -7,6 +7,26 @@ selector {
 /**======================-ШРИФТЫ_ПОДКЛЮЧАЕМЫЕ-=================*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
+.menu__link,
+.block__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu__link {
+  font-size: 13px;
+  letter-spacing: 2.6px;
+}
+
+
+.block__title {
+  line-height: 1.2;
+}
+
+.block__text {
+  line-height: 1.889;
+}
+
 /*!=================RESET=================!*/
 *,
 *::before,
@@ -78,6 +98,10 @@ select {
   font: inherit;
 }
 
+body {
+  font-size: 18px;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -93,6 +117,7 @@ select {
 .container {
   max-width: 1130px;
   padding: 0px 15px;
+  margin: 0 auto;
 }
 
 .ibg {
@@ -108,6 +133,7 @@ select {
 
 .main {
   position: absolute;
+  min-width: 320px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -119,6 +145,17 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main .hidden-h1 {
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /**======================-MAIN-SCREEN-=================*/
@@ -211,10 +248,6 @@ select {
 
 .menu__link {
   color: #4d4959;
-  font-style: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2.6px;
 }
 
 @media (max-width: 767px) {
@@ -315,4 +348,39 @@ select {
 }
 
 /**======================-ABOUT-US-=================*/
+.about-us {
+  background-color: #f7f7f7;
+  padding: 115px 0px;
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    padding: 65px 0px;
+  }
+}
+
+@media (max-width: 424px) {
+  .about-us {
+    padding: 35px 0px;
+  }
+}
+
+.block {
+  text-align: center;
+}
+
+.block__icon {
+  display: inline-block;
+  margin: 0px 0px 34px 0px;
+}
+
+.block__title {
+  color: #353738;
+  margin: 0px 0px 25px 0px;
+}
+
+.block__text {
+  color: #848789;
+}
+
 /**======================-FOOTER-=================*/
