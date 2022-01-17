@@ -1,0 +1,82 @@
+/**======================-SLIDER-=================*/
+
+// /* Конкретный слайдер */
+.slider {
+  background-color: $bg-light;
+  padding: 120px 0px 60px 0px;
+  &__body {
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0px 0px 30px 0px;
+  }
+
+  &__title {
+    @extend %title;
+    text-transform: none;
+    margin: 0px 0px 20px 0px;
+    span {
+      color: $time;
+    }
+  }
+
+  &__text {
+    @extend %text-tw;
+    color: $time;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0px 30px 0px;
+  }
+}
+
+// /* Слайдер */
+.slick-slider {
+  position: relative;
+  min-width: 0;
+  .slick-list,
+  .slick-track {
+  }
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .slick-slide {
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+    li {
+      margin: 0px 5px;
+      button {
+        font-size: 0;
+        width: 11px;
+        height: 11px;
+        border: 1px solid $doted;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+      &.slick-active {
+        button {
+          background-color: $doted-active;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 50px 0px 30px 0px;
+    }
+  }
+}

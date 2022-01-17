@@ -8,7 +8,8 @@ selector {
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 /**======================-ШРИФТЫ_ПО_УМОЛЧАНИЮ-=================*/
 .menu__link,
-.block__title {
+.block__title,
+.slider__title {
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -19,7 +20,8 @@ selector {
 }
 
 
-.block__title {
+.block__title,
+.slider__title {
   line-height: 1.2;
 }
 
@@ -30,6 +32,12 @@ selector {
 .block__text--j {
   font-size: 16px;
   line-height: 1.875;
+}
+
+.slider__text {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.417;
 }
 
 /*!=================RESET=================!*/
@@ -352,6 +360,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
 /**======================-ABOUT-US-=================*/
 .about-us {
   background-color: #f7f7f7;
@@ -536,6 +550,94 @@ body {
 @media (max-width: 1439px) {
   .block__text--j:after {
     margin: 25px auto 0px auto;
+  }
+}
+
+/**======================-SLIDER-=================*/
+.slider {
+  background-color: #f7f7f7;
+  padding: 120px 0px 60px 0px;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__icon {
+  display: inline-block;
+  margin: 0px 0px 30px 0px;
+}
+
+.slider__title {
+  text-transform: none;
+  margin: 0px 0px 20px 0px;
+}
+
+.slider__title span {
+  color: #8c8e90;
+}
+
+.slider__text {
+  color: #8c8e90;
+}
+
+@media (max-width: 767px) {
+  .slider {
+    padding: 60px 0px 30px 0px;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  min-width: 0;
+}
+
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+
+.slick-slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slick-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0px 0px 0px;
+}
+
+.slick-slider .slick-dots li {
+  margin: 0px 5px;
+}
+
+.slick-slider .slick-dots li button {
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #c9c9c9;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.slick-slider .slick-dots li.slick-active button {
+  background-color: #a9afb3;
+}
+
+@media (max-width: 767px) {
+  .slick-slider .slick-dots {
+    padding: 50px 0px 30px 0px;
   }
 }
 
