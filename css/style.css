@@ -27,6 +27,11 @@ selector {
   line-height: 1.889;
 }
 
+.block__text--j {
+  font-size: 16px;
+  line-height: 1.875;
+}
+
 /*!=================RESET=================!*/
 *,
 *::before,
@@ -381,6 +386,127 @@ body {
 
 .block__text {
   color: #848789;
+}
+
+/**======================-WORK-=================*/
+.work__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .work__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.work__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33.333%;
+          flex: 1 0 33.333%;
+}
+
+.work__column--b {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 66.667%;
+          flex: 1 0 66.667%;
+}
+
+.work__content {
+  padding: 70px 65px 55px 65px;
+  position: relative;
+}
+
+.work__content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -10px;
+  left: 50%;
+  margin: 0px 0px 0px -10px;
+  border-top: 10px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  z-index: 2;
+}
+
+@media (max-width: 1439px) {
+  .work__content {
+    padding: 40px 25px 35px 35px;
+  }
+}
+
+.work__img {
+  padding: 0px 0px 37.51% 0px;
+}
+
+.item {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.item__logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(100, 194, 158, 0.8);
+}
+
+.item:hover .item__logo {
+  visibility: visible;
+  opacity: 1;
+}
+
+.item__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1023px) {
+  .item {
+    height: auto;
+    padding: 0px 0px 65% 0px;
+  }
+}
+
+.block__text--j:after {
+  content: "";
+  display: block;
+  margin: 30px auto 0px auto;
+  width: 50px;
+  height: 1px;
+  background-color: #d7d7d7;
+}
+
+@media (max-width: 1439px) {
+  .block__text--j:after {
+    margin: 25px auto 0px auto;
+  }
 }
 
 /**======================-FOOTER-=================*/
