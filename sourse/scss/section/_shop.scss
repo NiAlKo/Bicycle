@@ -1,0 +1,65 @@
+/**======================-SHOP-=================*/
+.shop {
+  &__body {
+    display: flex;
+  }
+
+  &__column {
+    flex: 0 1 16.667%;
+    &--b {
+      flex: 0 1 33.333%;
+    }
+  }
+
+  &__block {
+    height: 100%;
+  }
+
+  &__footer {
+    background-color: $bg-shop;
+    padding: 75px 0px;
+    text-align: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    border: 1px solid $white-light;
+    color: $white;
+    padding: 20px 5.455%;
+    @extend %shop;
+  }
+
+  @media (max-width: 1023px) {
+    &__body {
+      flex-wrap: wrap;
+    }
+    &__column {
+      flex: 0 1 50%;
+      &:first-child,
+      &:last-child {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
+
+.block-shop {
+  &__row {
+    display: flex;
+  }
+
+  &__column {
+    flex: 0 1 50%;
+  }
+
+  &__item {
+    height: auto;
+    padding: 0px 0px 50% 0px;
+    &--b {
+      padding: 0px 0px 200.5% 0px;
+    }
+    &--s {
+      padding: 0px 0px 100% 0px;
+    }
+  }
+}

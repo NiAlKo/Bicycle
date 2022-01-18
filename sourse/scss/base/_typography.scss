@@ -1,9 +1,11 @@
 // /*!=================-TYPOGRAPHY-=================!*/
 
 %link-menu,
-%title {
+%title,
+%shop {
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 2.8px;
 }
 
 %link-menu {
@@ -28,4 +30,8 @@
   font-size: 24px;
   font-style: italic;
   line-height: 1.417;
+}
+%shop {
+  font-size: 14px;
+  line-height: 1.2;
 }
