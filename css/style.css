@@ -295,7 +295,7 @@ body a:hover {
 @media (max-width: 767px) {
   .icon-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 35px;
     right: 10px;
     width: 30px;

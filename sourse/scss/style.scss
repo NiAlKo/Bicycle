@@ -164,7 +164,7 @@ body {
 .icon-menu {
   @media (max-width: 767px) {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 35px;
     right: 10px;
     width: 30px;
