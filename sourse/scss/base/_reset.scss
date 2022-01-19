@@ -65,3 +65,9 @@ textarea,
 select {
   font: inherit;
 }
+/** Убираем стили для инпутов и кнопок с классом*/
+input[class],
+button[class] {
+  border: none;
+  outline: none;
+}
