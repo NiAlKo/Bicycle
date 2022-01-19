@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 /** Выставляем основные настройки по-умолчанию для body */
 body {
