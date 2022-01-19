@@ -20,6 +20,10 @@ body {
       overflow: hidden;
     }
   }
+  a:hover {
+    opacity: 0.7;
+    transition: all 0.3s linear;
+  }
 }
 
 //**======================-УПАКОВКА-=================*/
